@@ -9,6 +9,7 @@ const catFiltersContainer = document.getElementById('cat-filters');
 
 let projectsData = [];
 
+
 async function loadProjects() {
   try {
     const response = await fetch('https://gabistam.github.io/Demo_API/data/projects.json');
@@ -16,6 +17,7 @@ async function loadProjects() {
     const data = await response.json();
     projectsData = data.projects;
 
+    
     data.technologies.forEach(tech => {
       const btn = document.createElement('button');
       btn.dataset.tech = tech;
@@ -23,6 +25,7 @@ async function loadProjects() {
       techFiltersContainer.appendChild(btn);
     });
 
+    
     data.categories.forEach(cat => {
       const btn = document.createElement('button');
       btn.dataset.cat = cat;
@@ -39,6 +42,7 @@ async function loadProjects() {
     loader.style.display = 'none';
   }
 }
+
 
 function displayProjects(data) {
   projectsGrid.innerHTML = '';
@@ -64,6 +68,7 @@ function displayProjects(data) {
     projectsGrid.appendChild(card);
   });
 
+  
   document.querySelectorAll('.details-btn').forEach(btn => {
     btn.addEventListener('click', () => openModal(btn.dataset.id));
   });
@@ -82,8 +87,10 @@ function openModal(id) {
   modal.style.display = 'flex';
 }
 
+
 closeBtn.addEventListener('click', () => modal.style.display = 'none');
 window.addEventListener('click', e => { if(e.target === modal) modal.style.display = 'none'; });
+
 
 function addFilterEvents() {
   document.querySelectorAll('#tech-filters button').forEach(btn => {
