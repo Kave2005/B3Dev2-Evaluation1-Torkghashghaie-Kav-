@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - WebCraft Solutions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+  <div class="logo">
+    <a href="index.html">WebCraft Solutions</a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <main>
+    <section class="contact-section">
+      <h1>Contactez-nous</h1>
+      <form id="contact-form" novalidate>
+        <label>Nom <input type="text" name="name" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Message <textarea name="message" required></textarea></label>
+        <button type="submit">Envoyer</button>
+        <p id="form-msg"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Copyright 2025 WebCraft Solutions </p>
+    <div class="socials">
+ <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+      <img src="img/facebook.png" alt="Facebook">
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+      <img src="img/x.png" alt="Twitter">
+    </a>
+    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <img src="img/linkedin.png" alt="LinkedIn">
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/contact.js" type="module"></script>
+</body>
+</html>

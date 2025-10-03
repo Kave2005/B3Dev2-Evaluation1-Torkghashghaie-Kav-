@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebCraft Solutions - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+  <div class="logo">
+    <a href="index.html">WebCraft Solutions</a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <section class="hero">
+    <h1>Nous créons des expériences web uniques</h1>
+    <p>Agence spécialisée dans le développement web et mobile.</p>
+  </section>
+
+  <section class="portfolio">
+    <h2>Nos Projets</h2>
+
+    <div class="filter-buttons" id="tech-filters">
+      <button data-tech="all" class="active">Tous</button>
+    </div>
+
+    <div class="filter-buttons" id="cat-filters">
+      <button data-cat="all" class="active">Toutes catégories</button>
+    </div>
+
+    <div id="projects-grid" class="grid"></div>
+
+    <div id="loader">Chargement...</div>
+  </section>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" role="button" aria-label="Fermer">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; Copyright 2025 WebCraft Solutions</p>
+    <div class="socials">
+      
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+      <img src="img/facebook.png" alt="Facebook">
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+      <img src="img/x.png" alt="Twitter">
+    </a>
+    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <img src="img/linkedin.png" alt="LinkedIn">
+    </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>
